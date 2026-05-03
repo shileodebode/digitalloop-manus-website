@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://digital-loop.manus.space/sitemap.xml
+
+# Crawl delay (optional - adjust as needed)
+Crawl-delay: 1

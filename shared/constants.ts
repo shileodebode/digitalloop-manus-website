@@ -48,18 +48,18 @@ export const INTEGRATIONS = {
   tallyForm: 'https://tally.so/r/form-id', // Replace with actual Tally form ID
   calendly: 'https://calendly.com/digitalloop', // Replace with actual Calendly URL
   paystack: {
-    publicKey: process.env.VITE_PAYSTACK_PUBLIC_KEY || '',
+    publicKey: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || '',
     currency: 'NGN',
   },
   stripe: {
-    publicKey: process.env.VITE_STRIPE_PUBLIC_KEY || '',
+    publicKey: import.meta.env.VITE_STRIPE_PUBLIC_KEY || '',
     currency: 'USD',
   },
   tidio: {
-    projectId: process.env.VITE_TIDIO_PROJECT_ID || '',
+    projectId: import.meta.env.VITE_TIDIO_PROJECT_ID || '',
   },
   mailerlite: {
-    formId: process.env.VITE_MAILERLITE_FORM_ID || '',
+    formId: import.meta.env.VITE_MAILERLITE_FORM_ID || '',
   },
   plausible: {
     domain: 'digital-loop.manus.space',

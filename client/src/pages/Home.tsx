@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Layout from '@/components/Layout';
 import { PrimaryCTA, SecondaryCTA } from '@/components/CTAButtons';
 import ExitIntentModal from '@/components/ExitIntentModal';
+import OpenGraphMeta from '@/components/OpenGraphMeta';
 import { BRAND_COLORS } from '@shared/constants';
 import { ArrowRight, Zap, Users, TrendingUp, CheckCircle } from 'lucide-react';
 
@@ -23,6 +24,11 @@ const containerVariants = {
 export default function Home() {
   return (
     <>
+      <OpenGraphMeta
+        title="Digital Loop Int'l Limited - AI Education & Consulting"
+        description="Transform your business with AI. Learn cutting-edge AI skills, implement AI solutions, and stay ahead of the digital revolution. Join thousands of African professionals."
+        url="https://digital-loop.manus.space/"
+      />
       <ExitIntentModal />
       <Layout>
       {/* Hero Section */}
