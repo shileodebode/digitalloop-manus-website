@@ -79,8 +79,7 @@ export default function Academy() {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-4xl md:text-5xl font-bold mb-6"
-              className="text-accent"
+              className="text-4xl md:text-5xl font-bold mb-6 text-accent"
             >
               Learn AI. Master Your Future.
             </motion.h1>
@@ -107,7 +106,7 @@ export default function Academy() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Your Learning Journey
             </h2>
           </motion.div>
@@ -134,7 +133,7 @@ export default function Academy() {
                     >
                       {idx + 1}
                     </div>
-                    <h3 className="font-bold mb-2" className="text-accent">
+                    <h3 className="font-bold mb-2 text-accent">
                       {step.title}
                     </h3>
                     <p className="text-sm text-accent/80">{step.desc}</p>
@@ -163,7 +162,7 @@ export default function Academy() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Our Courses
             </h2>
             <p className="text-lg text-accent/80">
@@ -183,7 +182,7 @@ export default function Academy() {
                 <div className="p-8 flex-1">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-xl font-bold mb-2" className="text-accent">
+                      <h3 className="text-xl font-bold mb-2 text-accent">
                         {course.title}
                       </h3>
                       <p className="text-sm font-medium text-primary mb-4">
@@ -237,7 +236,7 @@ export default function Academy() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-accent">
               Frequently Asked Questions
             </h2>
 
@@ -254,7 +253,7 @@ export default function Academy() {
                     onClick={() => setExpandedFAQ(expandedFAQ === idx ? null : idx)}
                     className="w-full px-6 py-4 flex items-center justify-between hover:bg-lightBg transition-colors"
                   >
-                    <span className="font-semibold text-left" className="text-accent">
+                    <span className="font-semibold text-left text-accent">
                       {faq.question}
                     </span>
                     <ChevronDown

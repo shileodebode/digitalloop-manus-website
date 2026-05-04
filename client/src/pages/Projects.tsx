@@ -133,8 +133,7 @@ export default function Projects() {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-4xl md:text-5xl font-bold mb-6"
-              className="text-accent"
+              className="text-4xl md:text-5xl font-bold mb-6 text-accent"
             >
               Our Work
             </motion.h1>
@@ -173,7 +172,7 @@ export default function Projects() {
                 </div>
 
                 <p className="text-sm font-semibold text-primary mb-2">{project.category}</p>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors" className="text-accent">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors text-accent">
                   {project.title}
                 </h3>
                 <p className="text-accent/80 text-sm">{project.description}</p>
@@ -217,13 +216,13 @@ export default function Projects() {
 
               {/* Content */}
               <p className="text-sm font-semibold text-primary mb-2">{selectedProject.category}</p>
-              <h2 className="text-3xl font-bold mb-6" className="text-accent">
+              <h2 className="text-3xl font-bold mb-6 text-accent">
                 {selectedProject.title}
               </h2>
 
               {/* Challenge */}
               <div className="mb-8">
-                <h3 className="text-lg font-bold mb-3" className="text-accent">
+                <h3 className="text-lg font-bold mb-3 text-accent">
                   Challenge
                 </h3>
                 <p className="text-accent/80">{selectedProject.challenge}</p>
@@ -231,7 +230,7 @@ export default function Projects() {
 
               {/* Solution */}
               <div className="mb-8">
-                <h3 className="text-lg font-bold mb-3" className="text-accent">
+                <h3 className="text-lg font-bold mb-3 text-accent">
                   Solution
                 </h3>
                 <p className="text-accent/80">{selectedProject.solution}</p>
@@ -239,7 +238,7 @@ export default function Projects() {
 
               {/* Results */}
               <div className="mb-8">
-                <h3 className="text-lg font-bold mb-3" className="text-accent">
+                <h3 className="text-lg font-bold mb-3 text-accent">
                   Results
                 </h3>
                 <ul className="space-y-2">
@@ -257,7 +256,7 @@ export default function Projects() {
 
               {/* Technologies */}
               <div>
-                <h3 className="text-lg font-bold mb-3" className="text-accent">
+                <h3 className="text-lg font-bold mb-3 text-accent">
                   Technologies Used
                 </h3>
                 <div className="flex flex-wrap gap-2">

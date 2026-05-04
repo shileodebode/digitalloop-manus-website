@@ -83,8 +83,7 @@ export default function Masterclass() {
 
             <motion.h1
               variants={fadeInUp}
-              className="text-4xl md:text-5xl font-bold mb-6"
-              className="text-accent"
+              className="text-4xl md:text-5xl font-bold mb-6 text-accent"
             >
               AI for Everyone: From Basics to Business Impact
             </motion.h1>
@@ -114,7 +113,7 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-8" className="text-accent">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-accent">
               Next Masterclass Starts In:
             </h2>
 
@@ -152,7 +151,7 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-accent">
               What You'll Learn
             </h2>
 
@@ -183,7 +182,7 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-accent">
               Who This Is For
             </h2>
 
@@ -216,7 +215,7 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-accent">
               Your Instructor
             </h2>
 
@@ -228,7 +227,7 @@ export default function Masterclass() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-2" className="text-accent">
+                <h3 className="text-2xl font-bold mb-2 text-accent">
                   Expert Instructor
                 </h3>
                 <p className="text-sm text-primary font-semibold mb-4">AI & Machine Learning Specialist</p>
@@ -265,14 +264,14 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-accent">
               Register for Free
             </h2>
 
             <div className="bg-white p-8 rounded-xl border border-border">
               <form className="space-y-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2" className="text-accent">
+                  <label className="block text-sm font-semibold mb-2 text-accent">
                     Full Name
                   </label>
                   <input
@@ -283,7 +282,7 @@ export default function Masterclass() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" className="text-accent">
+                  <label className="block text-sm font-semibold mb-2 text-accent">
                     Email Address
                   </label>
                   <input
@@ -294,7 +293,7 @@ export default function Masterclass() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" className="text-accent">
+                  <label className="block text-sm font-semibold mb-2 text-accent">
                     WhatsApp Number
                   </label>
                   <input
@@ -305,7 +304,7 @@ export default function Masterclass() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" className="text-accent">
+                  <label className="block text-sm font-semibold mb-2 text-accent">
                     What's your main goal?
                   </label>
                   <select className="w-full px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none transition-colors">

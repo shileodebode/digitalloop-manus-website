@@ -71,8 +71,7 @@ export default function Business() {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-4xl md:text-5xl font-bold mb-6"
-              className="text-accent"
+              className="text-4xl md:text-5xl font-bold mb-6 text-accent"
             >
               Transform Your Business With AI
             </motion.h1>
@@ -99,7 +98,7 @@ export default function Business() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Our Services
             </h2>
             <p className="text-lg text-accent/80">
@@ -117,7 +116,7 @@ export default function Business() {
                 className="p-8 bg-white rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-3" className="text-accent">
+                <h3 className="text-xl font-bold mb-3 text-accent">
                   {service.title}
                 </h3>
                 <p className="text-accent/80 mb-6">{service.description}</p>
@@ -144,7 +143,7 @@ export default function Business() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Our Process
             </h2>
             <p className="text-lg text-accent/80">
@@ -167,7 +166,7 @@ export default function Business() {
                 >
                   {item.step}
                 </div>
-                <h3 className="text-lg font-bold mb-2" className="text-accent">
+                <h3 className="text-lg font-bold mb-2 text-accent">
                   {item.title}
                 </h3>
                 <p className="text-sm text-accent/80">{item.desc}</p>
@@ -205,7 +204,7 @@ export default function Business() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Case Study Highlights
             </h2>
           </motion.div>
@@ -220,7 +219,7 @@ export default function Business() {
                 className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl border border-border hover:shadow-lg transition-all"
               >
                 <p className="text-sm font-semibold text-primary mb-2">{study.industry}</p>
-                <h3 className="text-2xl font-bold mb-4" className="text-accent">
+                <h3 className="text-2xl font-bold mb-4 text-accent">
                   {study.title}
                 </h3>
                 <div className="mb-6">

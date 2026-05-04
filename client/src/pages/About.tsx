@@ -64,8 +64,7 @@ export default function About() {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-4xl md:text-5xl font-bold mb-6"
-              className="text-accent"
+              className="text-4xl md:text-5xl font-bold mb-6 text-accent"
             >
               About Digital Loop
             </motion.h1>
@@ -90,7 +89,7 @@ export default function About() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6" className="text-accent">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-accent">
                 Our Founder's Story
               </h2>
 
@@ -131,7 +130,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               What We Believe In
             </h2>
           </motion.div>
@@ -146,7 +145,7 @@ export default function About() {
                 className="p-8 bg-lightBg rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all"
               >
                 <belief.icon size={32} className="mb-4" style={{ color: BRAND_COLORS.primary }} />
-                <h3 className="text-xl font-bold mb-3" className="text-accent">
+                <h3 className="text-xl font-bold mb-3 text-accent">
                   {belief.title}
                 </h3>
                 <p className="text-accent/80">{belief.description}</p>
@@ -165,7 +164,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Our Team
             </h2>
             <p className="text-lg text-accent/80">
@@ -189,7 +188,7 @@ export default function About() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1" className="text-accent">
+                  <h3 className="text-xl font-bold mb-1 text-accent">
                     {member.name}
                   </h3>
                   <p className="text-sm font-semibold text-primary mb-3">{member.role}</p>
@@ -210,7 +209,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Our Impact
             </h2>
           </motion.div>
@@ -248,7 +247,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-accent">
               Our Values
             </h2>
 
@@ -280,7 +279,7 @@ export default function About() {
                 >
                   <CheckCircle size={24} className="flex-shrink-0 mt-1" style={{ color: BRAND_COLORS.primary }} />
                   <div>
-                    <h3 className="font-bold mb-2" className="text-accent">
+                    <h3 className="font-bold mb-2 text-accent">
                       {value.title}
                     </h3>
                     <p className="text-accent/80 text-sm">{value.description}</p>
