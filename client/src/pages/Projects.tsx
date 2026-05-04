@@ -134,13 +134,13 @@ export default function Projects() {
             <motion.h1
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-bold mb-6"
-              style={{ color: BRAND_COLORS.accent }}
+              className="text-accent"
             >
               Our Work
             </motion.h1>
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-muted mb-8"
+              className="text-lg text-accent/80 mb-8"
             >
               Real projects, real results. Explore how we've helped businesses across Africa leverage AI to solve complex challenges and drive growth.
             </motion.p>
@@ -163,7 +163,7 @@ export default function Projects() {
               >
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl overflow-hidden mb-4 border border-border group-hover:border-primary transition-all">
                   <div className="w-full h-full flex items-center justify-center">
-                    <div className="text-center text-muted">
+                    <div className="text-center text-accent/80">
                       <p className="text-sm">{project.image}</p>
                     </div>
                   </div>
@@ -173,10 +173,10 @@ export default function Projects() {
                 </div>
 
                 <p className="text-sm font-semibold text-primary mb-2">{project.category}</p>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors" className="text-accent">
                   {project.title}
                 </h3>
-                <p className="text-muted text-sm">{project.description}</p>
+                <p className="text-accent/80 text-sm">{project.description}</p>
               </motion.div>
             ))}
           </div>
@@ -210,36 +210,36 @@ export default function Projects() {
 
               {/* Project Image */}
               <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-8 flex items-center justify-center border border-border">
-                <div className="text-center text-muted">
+                <div className="text-center text-accent/80">
                   <p className="text-sm">{selectedProject.image}</p>
                 </div>
               </div>
 
               {/* Content */}
               <p className="text-sm font-semibold text-primary mb-2">{selectedProject.category}</p>
-              <h2 className="text-3xl font-bold mb-6" style={{ color: BRAND_COLORS.accent }}>
+              <h2 className="text-3xl font-bold mb-6" className="text-accent">
                 {selectedProject.title}
               </h2>
 
               {/* Challenge */}
               <div className="mb-8">
-                <h3 className="text-lg font-bold mb-3" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-lg font-bold mb-3" className="text-accent">
                   Challenge
                 </h3>
-                <p className="text-muted">{selectedProject.challenge}</p>
+                <p className="text-accent/80">{selectedProject.challenge}</p>
               </div>
 
               {/* Solution */}
               <div className="mb-8">
-                <h3 className="text-lg font-bold mb-3" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-lg font-bold mb-3" className="text-accent">
                   Solution
                 </h3>
-                <p className="text-muted">{selectedProject.solution}</p>
+                <p className="text-accent/80">{selectedProject.solution}</p>
               </div>
 
               {/* Results */}
               <div className="mb-8">
-                <h3 className="text-lg font-bold mb-3" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-lg font-bold mb-3" className="text-accent">
                   Results
                 </h3>
                 <ul className="space-y-2">
@@ -249,7 +249,7 @@ export default function Projects() {
                         className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                         style={{ backgroundColor: BRAND_COLORS.primary }}
                       />
-                      <span className="text-muted">{result}</span>
+                      <span className="text-accent/80">{result}</span>
                     </li>
                   ))}
                 </ul>
@@ -257,7 +257,7 @@ export default function Projects() {
 
               {/* Technologies */}
               <div>
-                <h3 className="text-lg font-bold mb-3" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-lg font-bold mb-3" className="text-accent">
                   Technologies Used
                 </h3>
                 <div className="flex flex-wrap gap-2">

@@ -64,7 +64,7 @@
   --popover: #FFFFFF;
   --popover-foreground: #0B2545;
   --muted: #E8EBF0;
-  --muted-foreground: #6B7280;
+  --muted-foreground: #4B5563;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   --border: #E8EBF0;
@@ -123,7 +123,16 @@
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
-    @apply font-bold;
+    @apply font-bold text-accent;
+  }
+  p {
+    @apply text-accent;
+  }
+  a {
+    @apply text-accent hover:text-primary;
+  }
+  li {
+    @apply text-accent;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),

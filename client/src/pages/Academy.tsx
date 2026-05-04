@@ -80,13 +80,13 @@ export default function Academy() {
             <motion.h1
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-bold mb-6"
-              style={{ color: BRAND_COLORS.accent }}
+              className="text-accent"
             >
               Learn AI. Master Your Future.
             </motion.h1>
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-muted mb-8"
+              className="text-lg text-accent/80 mb-8"
             >
               Structured, outcome-focused courses designed to transform you into an AI professional. From fundamentals to advanced applications.
             </motion.p>
@@ -107,7 +107,7 @@ export default function Academy() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
               Your Learning Journey
             </h2>
           </motion.div>
@@ -134,10 +134,10 @@ export default function Academy() {
                     >
                       {idx + 1}
                     </div>
-                    <h3 className="font-bold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                    <h3 className="font-bold mb-2" className="text-accent">
                       {step.title}
                     </h3>
-                    <p className="text-sm text-muted">{step.desc}</p>
+                    <p className="text-sm text-accent/80">{step.desc}</p>
                   </div>
                   {idx < 3 && (
                     <div className="hidden md:block absolute top-1/2 -right-2 transform -translate-y-1/2">
@@ -163,10 +163,10 @@ export default function Academy() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
               Our Courses
             </h2>
-            <p className="text-lg text-muted">
+            <p className="text-lg text-accent/80">
               Outcome-first curriculum designed for real-world impact
             </p>
           </motion.div>
@@ -183,7 +183,7 @@ export default function Academy() {
                 <div className="p-8 flex-1">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-xl font-bold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                      <h3 className="text-xl font-bold mb-2" className="text-accent">
                         {course.title}
                       </h3>
                       <p className="text-sm font-medium text-primary mb-4">
@@ -237,7 +237,7 @@ export default function Academy() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
               Frequently Asked Questions
             </h2>
 
@@ -254,7 +254,7 @@ export default function Academy() {
                     onClick={() => setExpandedFAQ(expandedFAQ === idx ? null : idx)}
                     className="w-full px-6 py-4 flex items-center justify-between hover:bg-lightBg transition-colors"
                   >
-                    <span className="font-semibold text-left" style={{ color: BRAND_COLORS.accent }}>
+                    <span className="font-semibold text-left" className="text-accent">
                       {faq.question}
                     </span>
                     <ChevronDown
@@ -273,7 +273,7 @@ export default function Academy() {
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="px-6 py-4 bg-lightBg border-t border-border text-muted"
+                      className="px-6 py-4 bg-lightBg border-t border-border text-accent/80"
                     >
                       {faq.answer}
                     </motion.div>

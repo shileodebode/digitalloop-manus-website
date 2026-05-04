@@ -27,14 +27,14 @@ export default function Contact() {
             <motion.h1
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-bold mb-6"
-              style={{ color: BRAND_COLORS.accent }}
+              className="text-accent"
             >
               Get in Touch
             </motion.h1>
 
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-muted mb-8"
+              className="text-lg text-accent/80 mb-8"
             >
               Have questions? Want to explore how we can help your business? We'd love to hear from you. Reach out using any method below.
             </motion.p>
@@ -81,10 +81,10 @@ export default function Contact() {
                   className="mx-auto mb-4 group-hover:text-primary transition-colors"
                   style={{ color: BRAND_COLORS.primary }}
                 />
-                <h3 className="text-lg font-bold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-lg font-bold mb-2" className="text-accent">
                   {method.title}
                 </h3>
-                <p className="text-muted group-hover:text-primary transition-colors">
+                <p className="text-accent/80 group-hover:text-primary transition-colors">
                   {method.value}
                 </p>
               </motion.a>
@@ -102,7 +102,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
               Send us a Message
             </h2>
 
@@ -110,7 +110,7 @@ export default function Contact() {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                    <label className="block text-sm font-semibold mb-2" className="text-accent">
                       First Name
                     </label>
                     <input
@@ -121,7 +121,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                    <label className="block text-sm font-semibold mb-2" className="text-accent">
                       Last Name
                     </label>
                     <input
@@ -133,7 +133,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     Email Address
                   </label>
                   <input
@@ -144,7 +144,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     Phone Number
                   </label>
                   <input
@@ -155,7 +155,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     Subject
                   </label>
                   <select className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:border-primary focus:outline-none transition-colors">
@@ -168,7 +168,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     Message
                   </label>
                   <textarea
@@ -187,7 +187,7 @@ export default function Contact() {
                   </PrimaryCTA>
                 </motion.div>
 
-                <p className="text-xs text-muted text-center">
+                <p className="text-xs text-accent/80 text-center">
                   We'll get back to you within 24 hours. Thank you for reaching out!
                 </p>
               </form>
@@ -205,10 +205,10 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
               Schedule a Consultation
             </h2>
-            <p className="text-lg text-muted">
+            <p className="text-lg text-accent/80">
               Prefer to book a call directly? Schedule a free consultation with our team.
             </p>
           </motion.div>
@@ -220,7 +220,7 @@ export default function Contact() {
             className="max-w-2xl mx-auto"
           >
             <div className="bg-white p-8 rounded-xl border border-border">
-              <p className="text-center text-muted mb-6">
+              <p className="text-center text-accent/80 mb-6">
                 Calendly embed will be placed here. This allows visitors to book directly.
               </p>
               <div className="text-center">
@@ -243,7 +243,7 @@ export default function Contact() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: BRAND_COLORS.accent }}>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6" className="text-accent">
                 Visit Us
               </h2>
 
@@ -251,20 +251,20 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <MapPin size={24} className="flex-shrink-0 mt-1" style={{ color: BRAND_COLORS.primary }} />
                   <div>
-                    <h3 className="font-bold mb-1" style={{ color: BRAND_COLORS.accent }}>
+                    <h3 className="font-bold mb-1" className="text-accent">
                       Office Address
                     </h3>
-                    <p className="text-muted">{CONTACT_INFO.address}</p>
+                    <p className="text-accent/80">{CONTACT_INFO.address}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <Phone size={24} className="flex-shrink-0 mt-1" style={{ color: BRAND_COLORS.primary }} />
                   <div>
-                    <h3 className="font-bold mb-1" style={{ color: BRAND_COLORS.accent }}>
+                    <h3 className="font-bold mb-1" className="text-accent">
                       Phone
                     </h3>
-                    <a href={`tel:${CONTACT_INFO.phone}`} className="text-muted hover:text-primary transition-colors">
+                    <a href={`tel:${CONTACT_INFO.phone}`} className="text-accent/80 hover:text-primary transition-colors">
                       {CONTACT_INFO.phone}
                     </a>
                   </div>
@@ -273,10 +273,10 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <Mail size={24} className="flex-shrink-0 mt-1" style={{ color: BRAND_COLORS.primary }} />
                   <div>
-                    <h3 className="font-bold mb-1" style={{ color: BRAND_COLORS.accent }}>
+                    <h3 className="font-bold mb-1" className="text-accent">
                       Email
                     </h3>
-                    <a href={`mailto:${CONTACT_INFO.email}`} className="text-muted hover:text-primary transition-colors">
+                    <a href={`mailto:${CONTACT_INFO.email}`} className="text-accent/80 hover:text-primary transition-colors">
                       {CONTACT_INFO.email}
                     </a>
                   </div>
@@ -285,7 +285,7 @@ export default function Contact() {
             </div>
 
             <div className="h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center border border-border">
-              <div className="text-center text-muted">
+              <div className="text-center text-accent/80">
                 <p className="text-sm">Google Map Embed</p>
               </div>
             </div>
@@ -302,7 +302,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12" className="text-accent">
               Quick Links
             </h2>
 
@@ -320,7 +320,7 @@ export default function Contact() {
                   transition={{ duration: 0.6, delay: idx * 0.1 }}
                   className="p-6 bg-white rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all"
                 >
-                  <span className="font-semibold hover:text-primary transition-colors" style={{ color: BRAND_COLORS.accent }}>
+                  <span className="font-semibold hover:text-primary transition-colors" className="text-accent">
                     {item.title}
                   </span>
                 </motion.a>

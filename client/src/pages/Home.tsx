@@ -43,15 +43,14 @@ export default function Home() {
             >
               <motion.h1
                 variants={fadeInUp}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
-                style={{ color: BRAND_COLORS.accent }}
+                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-accent"
               >
                 Transform Your Business With AI
               </motion.h1>
 
               <motion.p
                 variants={fadeInUp}
-                className="text-lg md:text-xl text-muted mb-8 leading-relaxed"
+                className="text-lg md:text-xl text-accent/80 mb-8 leading-relaxed"
               >
                 Learn cutting-edge AI skills, implement AI solutions, and stay ahead of the digital revolution. Join thousands of African professionals transforming their careers and businesses.
               </motion.p>
@@ -91,14 +90,14 @@ export default function Home() {
       {/* Trust Bar */}
       <section className="py-8 md:py-12 bg-lightBg border-y border-border">
         <div className="container">
-          <p className="text-center text-sm font-semibold text-muted mb-6">
+          <p className="text-center text-sm font-semibold text-accent/70 mb-6">
             Trusted by leading African companies
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
             {['Company A', 'Company B', 'Company C', 'Company D'].map((company, idx) => (
               <div
                 key={idx}
-                className="h-12 bg-white rounded-lg flex items-center justify-center text-sm font-medium text-muted"
+                className="h-12 bg-white rounded-lg flex items-center justify-center text-sm font-medium text-accent"
               >
                 {company}
               </div>
@@ -116,10 +115,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-accent">
               The Shift Is Here
             </h2>
-            <p className="text-lg text-muted leading-relaxed">
+            <p className="text-lg text-accent/80 leading-relaxed">
               Artificial Intelligence is no longer a future technology—it's reshaping industries, creating new opportunities, and defining the next generation of business leaders. Are you ready to lead the change?
             </p>
           </motion.div>
@@ -150,10 +149,10 @@ export default function Home() {
                 className="p-8 bg-lightBg rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
               >
                 <item.icon size={32} className="mb-4" style={{ color: BRAND_COLORS.primary }} />
-                <h3 className="text-xl font-bold mb-3" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-xl font-bold mb-3 text-accent">
                   {item.title}
                 </h3>
-                <p className="text-muted">{item.description}</p>
+                <p className="text-accent/80">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -169,10 +168,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               Choose Your Path
             </h2>
-            <p className="text-lg text-muted">
+            <p className="text-lg text-accent/80">
               Whether you're an individual learner or a business, we have the right program for you.
             </p>
           </motion.div>
@@ -207,10 +206,10 @@ export default function Home() {
                 className="p-8 bg-white rounded-xl border-2 border-border hover:border-primary hover:shadow-xl transition-all duration-300 cursor-pointer group"
               >
                 <div className="text-4xl mb-4">{path.icon}</div>
-                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors text-accent">
                   {path.title}
                 </h3>
-                <p className="text-muted mb-4">{path.description}</p>
+                <p className="text-accent/80 mb-4">{path.description}</p>
                 <div className="flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
                   Learn More <ArrowRight size={20} />
                 </div>
@@ -229,17 +228,17 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-accent">
               Featured Program
             </h2>
 
             <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 md:p-12 border border-border">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-3xl font-bold mb-4" style={{ color: BRAND_COLORS.primary }}>
+                  <h3 className="text-3xl font-bold mb-4 text-primary">
                     AI Fundamentals Bootcamp
                   </h3>
-                  <p className="text-lg text-muted mb-6 leading-relaxed">
+                  <p className="text-lg text-accent/80 mb-6 leading-relaxed">
                     Master the core concepts of AI, machine learning, and practical applications. Perfect for professionals looking to transition into AI roles.
                   </p>
                   <ul className="space-y-3 mb-8">
@@ -251,7 +250,7 @@ export default function Home() {
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-center gap-3">
                         <CheckCircle size={20} style={{ color: BRAND_COLORS.primary }} />
-                        <span className="text-foreground">{item}</span>
+                        <span className="text-accent">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -260,7 +259,7 @@ export default function Home() {
                   </PrimaryCTA>
                 </div>
                 <div className="h-64 md:h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center">
-                  <div className="text-center text-muted">
+                  <div className="text-center text-accent/60">
                     <p className="text-sm">Program Image Placeholder</p>
                   </div>
                 </div>
@@ -279,7 +278,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               How It Works
             </h2>
           </motion.div>
@@ -305,10 +304,10 @@ export default function Home() {
                   >
                     {item.step}
                   </div>
-                  <h3 className="text-xl font-bold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <h3 className="text-xl font-bold mb-2 text-accent">
                     {item.title}
                   </h3>
-                  <p className="text-muted">{item.desc}</p>
+                  <p className="text-accent/80">{item.desc}</p>
                 </div>
                 {idx < 3 && (
                   <div className="hidden md:block absolute top-8 -right-3 text-2xl text-border">
@@ -330,7 +329,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
               What Our Students Say
             </h2>
           </motion.div>
@@ -349,12 +348,12 @@ export default function Home() {
                     <span key={i} className="text-yellow-400">★</span>
                   ))}
                 </div>
-                <p className="text-muted mb-6 italic">
+                <p className="text-accent/80 mb-6 italic">
                   "This program completely transformed my career. The hands-on projects and mentorship were invaluable."
                 </p>
                 <div>
-                  <p className="font-bold" style={{ color: BRAND_COLORS.accent }}>Student Name</p>
-                  <p className="text-sm text-muted">Job Title, Company</p>
+                  <p className="font-bold text-accent">Student Name</p>
+                  <p className="text-sm text-accent/70">Job Title, Company</p>
                 </div>
               </motion.div>
             ))}

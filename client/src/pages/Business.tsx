@@ -72,13 +72,13 @@ export default function Business() {
             <motion.h1
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-bold mb-6"
-              style={{ color: BRAND_COLORS.accent }}
+              className="text-accent"
             >
               Transform Your Business With AI
             </motion.h1>
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-muted mb-8"
+              className="text-lg text-accent/80 mb-8"
             >
               Strategic consulting, team training, and custom AI solutions designed to drive measurable business impact and competitive advantage.
             </motion.p>
@@ -99,10 +99,10 @@ export default function Business() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
               Our Services
             </h2>
-            <p className="text-lg text-muted">
+            <p className="text-lg text-accent/80">
               End-to-end AI solutions for your organization
             </p>
           </motion.div>
@@ -117,10 +117,10 @@ export default function Business() {
                 className="p-8 bg-white rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-3" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-xl font-bold mb-3" className="text-accent">
                   {service.title}
                 </h3>
-                <p className="text-muted mb-6">{service.description}</p>
+                <p className="text-accent/80 mb-6">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm">
@@ -144,10 +144,10 @@ export default function Business() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
               Our Process
             </h2>
-            <p className="text-lg text-muted">
+            <p className="text-lg text-accent/80">
               A proven 6-step methodology for successful AI implementation
             </p>
           </motion.div>
@@ -167,10 +167,10 @@ export default function Business() {
                 >
                   {item.step}
                 </div>
-                <h3 className="text-lg font-bold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-lg font-bold mb-2" className="text-accent">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted">{item.desc}</p>
+                <p className="text-sm text-accent/80">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -180,14 +180,14 @@ export default function Business() {
       {/* Client Logos */}
       <section className="py-12 md:py-16 bg-lightBg border-y border-border">
         <div className="container">
-          <p className="text-center text-sm font-semibold text-muted mb-8">
+          <p className="text-center text-sm font-semibold text-accent/80 mb-8">
             Trusted by leading African companies
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
             {['Company A', 'Company B', 'Company C', 'Company D'].map((company, idx) => (
               <div
                 key={idx}
-                className="h-12 bg-white rounded-lg flex items-center justify-center text-sm font-medium text-muted"
+                className="h-12 bg-white rounded-lg flex items-center justify-center text-sm font-medium text-accent/80"
               >
                 {company}
               </div>
@@ -205,7 +205,7 @@ export default function Business() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" className="text-accent">
               Case Study Highlights
             </h2>
           </motion.div>
@@ -220,15 +220,15 @@ export default function Business() {
                 className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl border border-border hover:shadow-lg transition-all"
               >
                 <p className="text-sm font-semibold text-primary mb-2">{study.industry}</p>
-                <h3 className="text-2xl font-bold mb-4" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-2xl font-bold mb-4" className="text-accent">
                   {study.title}
                 </h3>
                 <div className="mb-6">
-                  <p className="text-sm text-muted mb-2">Challenge:</p>
+                  <p className="text-sm text-accent/80 mb-2">Challenge:</p>
                   <p className="text-foreground">{study.challenge}</p>
                 </div>
                 <div>
-                  <p className="text-sm text-muted mb-2">Result:</p>
+                  <p className="text-sm text-accent/80 mb-2">Result:</p>
                   <p className="text-lg font-bold" style={{ color: BRAND_COLORS.primary }}>
                     {study.result}
                   </p>

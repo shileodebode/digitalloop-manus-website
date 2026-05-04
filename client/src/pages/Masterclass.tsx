@@ -84,14 +84,14 @@ export default function Masterclass() {
             <motion.h1
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-bold mb-6"
-              style={{ color: BRAND_COLORS.accent }}
+              className="text-accent"
             >
               AI for Everyone: From Basics to Business Impact
             </motion.h1>
 
             <motion.p
               variants={fadeInUp}
-              className="text-lg text-muted mb-8"
+              className="text-lg text-accent/80 mb-8"
             >
               Join us for an exclusive free masterclass where you'll learn AI fundamentals, discover real-world applications, and explore career opportunities in this rapidly growing field.
             </motion.p>
@@ -114,7 +114,7 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8" className="text-accent">
               Next Masterclass Starts In:
             </h2>
 
@@ -135,7 +135,7 @@ export default function Masterclass() {
                   <div className="text-3xl md:text-4xl font-bold" style={{ color: BRAND_COLORS.primary }}>
                     {String(item.value).padStart(2, '0')}
                   </div>
-                  <p className="text-xs md:text-sm font-semibold text-muted mt-2">{item.label}</p>
+                  <p className="text-xs md:text-sm font-semibold text-accent/80 mt-2">{item.label}</p>
                 </motion.div>
               ))}
             </div>
@@ -152,7 +152,7 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12" className="text-accent">
               What You'll Learn
             </h2>
 
@@ -183,7 +183,7 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12" className="text-accent">
               Who This Is For
             </h2>
 
@@ -216,24 +216,24 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
               Your Instructor
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="h-64 md:h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center border border-border">
-                <div className="text-center text-muted">
+                <div className="text-center text-accent/80">
                   <p className="text-sm">Instructor Photo</p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                <h3 className="text-2xl font-bold mb-2" className="text-accent">
                   Expert Instructor
                 </h3>
                 <p className="text-sm text-primary font-semibold mb-4">AI & Machine Learning Specialist</p>
 
-                <p className="text-muted mb-6 leading-relaxed">
+                <p className="text-accent/80 mb-6 leading-relaxed">
                   With 10+ years of experience in AI and machine learning, our instructor has helped hundreds of professionals transition into AI careers and led successful AI implementations across various industries.
                 </p>
 
@@ -265,14 +265,14 @@ export default function Masterclass() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: BRAND_COLORS.accent }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" className="text-accent">
               Register for Free
             </h2>
 
             <div className="bg-white p-8 rounded-xl border border-border">
               <form className="space-y-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     Full Name
                   </label>
                   <input
@@ -283,7 +283,7 @@ export default function Masterclass() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     Email Address
                   </label>
                   <input
@@ -294,7 +294,7 @@ export default function Masterclass() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     WhatsApp Number
                   </label>
                   <input
@@ -305,7 +305,7 @@ export default function Masterclass() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2" style={{ color: BRAND_COLORS.accent }}>
+                  <label className="block text-sm font-semibold mb-2" className="text-accent">
                     What's your main goal?
                   </label>
                   <select className="w-full px-4 py-3 rounded-lg border border-border focus:border-primary focus:outline-none transition-colors">
@@ -326,7 +326,7 @@ export default function Masterclass() {
                   </PrimaryCTA>
                 </motion.div>
 
-                <p className="text-xs text-muted text-center">
+                <p className="text-xs text-accent/80 text-center">
                   We respect your privacy. You'll receive a confirmation email with the masterclass link.
                 </p>
               </form>
